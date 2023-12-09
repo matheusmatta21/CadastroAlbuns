@@ -1,8 +1,6 @@
 from tkinter import *
-#variaveis de armazenamento de dados
 
-
-#funcoes de pegar dados
+#funcoes
 
 def pegarDados():
     dados =[]
@@ -76,22 +74,6 @@ botaoConcluir.place(x=220, y=190)
 
 botaoVisualizarAlbuns = Button(window, text="Visualizar Albuns", command=vizualisarAlbuns)
 botaoVisualizarAlbuns.place(x=220, y=220)
-
-
-
-# def pegarDados():
-#     dados =[]
-#     dados.append(str(nomeAlbum.get()))
-#     dados.append(str(anoAlbum.get()))
-#     dados.append(str(nomeArtista.get()))
-#     dados.append(str(albumLancamento.get()))
-#     print(dados)
-
-
-
-    
-
-
 
 window.mainloop()
 
