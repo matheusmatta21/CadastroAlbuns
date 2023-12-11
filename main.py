@@ -47,7 +47,7 @@ def visualizarAlbuns(): #if len(listaAlbuns) == 0: erro
         anoEscolhido = comboboxAnos.get()
         arquivoAnos = open("dados.txt", "r", encoding="utf-8")
         print(opcaoEscolhida)
-        if opcaoEscolhida == 1:
+        if opcaoEscolhida == 0:
             for linhas in arquivoAnos.readlines():
                 albuns = linhas.split('|')
                 print(albuns[1])
@@ -55,14 +55,14 @@ def visualizarAlbuns(): #if len(listaAlbuns) == 0: erro
                     labelAlbumAno = Label(windowFour,text=f"Album: {albuns[0]}\nAno: {albuns[1]}\nArtista: {albuns[2]}\nAlbum de Lançamento: {albuns[3]}")
                     labelAlbumAno.pack()
             arquivoAnos.close()
-        elif opcaoEscolhida == 4:
+        elif opcaoEscolhida == 1:
             for linhas in arquivoAnos.readlines():
                 albuns = linhas.split('|')
                 if anoEscolhido == albuns[1]:
                     labelAlbumAno = Label(windowFour,text=f"Album: {albuns[0]}\nAno: {albuns[1]}\nArtista: {albuns[2]}\nAlbum de Lançamento: {albuns[3]}")
                     labelAlbumAno.pack()
             arquivoAnos.close()
-        elif opcaoEscolhida == 0:
+        elif opcaoEscolhida == 2:
             for linhas in arquivoAnos.readlines():
                 albuns = linhas.split('|')
                 if anoEscolhido <= albuns[1]:
