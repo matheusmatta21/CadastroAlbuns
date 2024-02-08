@@ -81,6 +81,8 @@ def visualizarAlbuns():
     labelInputAno.place(x=160, y=100)
 
 
+
+    # o valorEscolha não está sendo atribuido ao opcaoEscolhida = valorEscolha.get(). tentei procurar tudo que é possivel pra corrigir isso, mas não obtive solução alguma.
     valorEscolha = IntVar()
     r1 = Radiobutton(windowTwo, text="Anterior a", value=0, variable=valorEscolha)
     r2 = Radiobutton(windowTwo, text="Igual a", value=1, variable=valorEscolha)
