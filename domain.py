@@ -8,7 +8,6 @@ def pegarDados(nome, album, artista, lancamento):
     dados.append(str(artista))
     dados.append(str(lancamento))
     db.registrarAlbum(dados)
-    print(dados)
     return dados 
 
 
