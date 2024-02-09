@@ -30,8 +30,6 @@ def visualizarAlbuns():
         anoEscolhido = comboboxAnos.get()
         albuns = []
         domain.buscaPorAno(albuns)
-        print(opcaoEscolhida)
-        print(anoEscolhido)
         for i in range(0, len(albuns)):
             if opcaoEscolhida == 0:
                 if anoEscolhido >= albuns[i][1]:
